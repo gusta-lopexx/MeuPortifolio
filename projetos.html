@@ -1,143 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre - Gustavo Lopes</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos — Gustavo Lopes</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header class="d-flex justify-content-between align-items-center mb-5 p-3">
-    <div class="d-flex align-items-center">
-      <strong>Gustavo Ap. de Souza Lopes</strong> <span class="ms-2 text-muted">Analista e Programador</span>
-    </div>
-    <nav>
-      <a href="index.html" class="nav-link d-inline">Inicio</a>
-      <a href="sobre.html" class="nav-link d-inline">Sobre</a>
-      <a href="projetos.html" class="nav-link d-inline">Projetos</a>
-      <a href="contato.html" class="nav-link d-inline">Contato</a>
-    </nav>
-  </header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .card-text {
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="d-flex justify-content-between align-items-center mb-5 p-3">
+      <div class="d-flex align-items-center">
+        <strong>Gustavo Ap. de Souza Lopes</strong>
+        <span class="ms-2 text-muted">Analista e Programador</span>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link d-inline">Início</a>
+        <a href="sobre.html" class="nav-link d-inline">Sobre</a>
+        <a href="projetos.html" class="nav-link d-inline">Projetos</a>
+        <a href="contato.html" class="nav-link d-inline">Contato</a>
+      </nav>
+    </header>
 
-  <!-- Conteúdo principal -->
-  <main class="container my-5">
-    <!-- PÁGINA PROJETOS -->
-        <div id="blog" class="container py-5 text-dark">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center mb-4">Projetos</h1>
-                <p class="text-center">Aqui estão alguns dos meus projetos mais recentes, desenvolvidos para praticar e aprimorar minhas habilidades em programação.</p>
-            </div>
-        
-            <div class="row g-4">
-                <!-- Projeto 1 -->
-                <div class="col-md-6 col-lg-4">
-                <a href="https://github.com/Kakabell/Calculadora-C--Console" target="_blank" class="text-decoration-none text-white">
-                    <div class="card h-100 border-danger">
-                    <img src="img/projetos/calculadora.jpg" class="card-img-top" alt="Calculadora">
-                    <div class="card-body">
-                        <h5 class="card-title">Calculadora no Console - C#</h5>
-                        <p class="card-text">Calculadora simples que realiza operações matemáticas básicas diretamente no console.</p>
-                    </div>
-                    <div class="card-footer text-muted">Abril, 23</div>
-                    </div>
-                </a>
-                </div>
-
-                <!-- Projeto 2 -->
-                <div class="col-md-6 col-lg-4">
-                <a href="https://github.com/Kakabell/GeradorTabuada" target="_blank" class="text-decoration-none text-white">
-                    <div class="card h-100 border-danger">
-                    <img src="img/projetos/tabuada.jpg" class="card-img-top" alt="Tabuada">
-                    <div class="card-body">
-                        <h5 class="card-title">Gerador de Tabuada - C#</h5>
-                        <p class="card-text">Gera tabuadas de multiplicação a partir de um número informado.</p>
-                    </div>
-                    <div class="card-footer text-muted">Abril, 23</div>
-                    </div>
-                </a>
-                </div>
-
-                <!-- Projeto 3 -->
-                <div class="col-md-6 col-lg-4">
-                <a href="https://github.com/Kakabell/TreinoTelaLogin" target="_blank" class="text-decoration-none text-white">
-                    <div class="card h-100 border-danger">
-                    <img src="img/projetos/Tela-Login.jpg" class="card-img-top" alt="Login HTML CSS">
-                    <div class="card-body">
-                        <h5 class="card-title">Login com HTML e CSS</h5>
-                        <p class="card-text">Interface de login criada com HTML e CSS para fins de treino em front-end.</p>
-                    </div>
-                    <div class="card-footer text-muted">Abril, 23</div>
-                    </div>
-                </a>
-                </div>
-
-                <!-- Projeto 4 -->
-                <div class="col-md-6 col-lg-4">
-                <a href="https://github.com/Kakabell/JogoDaCobrinha" target="_blank" class="text-decoration-none text-white">
-                    <div class="card h-100 border-danger">
-                    <img src="img/projetos/JogoCobrinha.png" class="card-img-top" alt="Jogo Cobrinha">
-                    <div class="card-body">
-                        <h5 class="card-title">Jogo da Cobrinha com JavaScript</h5>
-                        <p class="card-text">Jogo clássico da cobrinha desenvolvido para treino com JavaScript.</p>
-                    </div>
-                    <div class="card-footer text-muted">Novembro, 24</div>
-                    </div>
-                </a>
-                </div>
-
-                <!-- Projeto 5 -->
-                <div class="col-md-6 col-lg-4">
-                <a href="https://github.com/Kakabell/JogoMario" target="_blank" class="text-decoration-none text-white">
-                    <div class="card h-100 border-danger">
-                    <img src="img/projetos/JogoDoMario.png" class="card-img-top" alt="Jogo Mario">
-                    <div class="card-body">
-                        <h5 class="card-title">Jogo do Mario com JavaScript</h5>
-                        <p class="card-text">Versão simples do jogo do Mario, criada como exercício de lógica e DOM com JavaScript.</p>
-                    </div>
-                    <div class="card-footer text-muted">Novembro, 24</div>
-                    </div>
-                </a>
-                </div>
-
-                <!-- Projeto 6 -->
-                <div class="col-md-6 col-lg-4">
-                <a href="https://github.com/Kakabell/Previs-oDoTempo" target="_blank" class="text-decoration-none text-white">
-                    <div class="card h-100 border-danger">
-                    <img src="img//projetos/previsaodotempo.png" class="card-img-top" alt="Previsão do Tempo">
-                    <div class="card-body">
-                        <h5 class="card-title">Previsão do Tempo</h5>
-                        <p class="card-text">Aplicação que consulta API de clima para exibir a previsão do tempo da cidade informada.</p>
-                    </div>
-                    <div class="card-footer text-muted">Novembro, 24</div>
-                    </div>
-                </a>
-                </div>
-
-            </div>
+    <main class="container my-5">
+      <section id="projetos">
+        <div class="text-center mb-4">
+          <h1 class="mb-3">Meus Projetos</h1>
+          <p>
+            Alguns projetos que desenvolvi para praticar e aprimorar minhas
+            habilidades em programação.
+          </p>
         </div>
-        <!-- FINAL PÁGINA PROJETOS -->
-  </main>
 
-  <!-- Rodapé -->
-  <footer class="footer d-flex justify-content-center gap-5 text-center py-4 flex-wrap">
-    <hr style="border: none; height: 3px; background: linear-gradient(to right, transparent, #6c757d, transparent); margin: 40px 0;">
-    <div>
-      <strong>Email</strong><br>
-      gltechlopes@gmail.com
-    </div>
+        <div id="cards-container" class="row g-4">
+          <!-- JS vai preencher os cards aqui -->
+        </div>
+      </section>
+    </main>
 
-    <div>
-      <strong>GitHub</strong><br>
-      <a href="https://github.com/gusta-lopexx" target="_blank">https://github.com/gusta-lopexx</a>
-    </div>
-    <hr style="border: none; height: 3px; background: linear-gradient(to right, transparent, #6c757d, transparent); margin: 40px 0;">
-  </footer>
+    <footer
+      class="footer d-flex justify-content-center gap-5 text-center py-4 flex-wrap"
+    >
+      <hr
+        style="
+          border: none;
+          height: 3px;
+          background: linear-gradient(
+            to right,
+            transparent,
+            #6c757d,
+            transparent
+          );
+          margin: 40px 0;
+        "
+      />
+      <div>
+        <strong>Email</strong><br />
+        gltechlopes@gmail.com
+      </div>
+      <div>
+        <strong>GitHub</strong><br />
+        <a href="https://github.com/gusta-lopexx" target="_blank"
+          >github.com/gusta-lopexx</a
+        >
+      </div>
+      <hr
+        style="
+          border: none;
+          height: 3px;
+          background: linear-gradient(
+            to right,
+            transparent,
+            #6c757d,
+            transparent
+          );
+          margin: 40px 0;
+        "
+      />
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script>
+      const projetos = [
+        // ⭐ 2025
+        {
+          title: "Orçamento mensal — Fillament",
+          description:
+            "Sistema para controle de orçamento mensal, desenvolvido com Fillament para aprimorar habilidades na ferramenta.",
+          img: "img/projetos/orcamentosimples.png",
+          link: "https://github.com/gusta-lopexx/OrcamentoMensalSimples",
+          date: "Julho 2025",
+        },
+        {
+          title: "Sistemas de HotLap",
+          description:
+            "Projeto web simples para cadastro e visualização de tempos de pilotos em corridas de HotLap, com ranking, filtros, validações e atualização automática.",
+          img: "img/projetos/siteHotLap.png",
+          link: "https://github.com/gusta-lopexx/SiteHotLap",
+          date: "Maio 2025",
+        },
+
+        // ⭐ 2024
+        {
+          title: "Jogo da Cobrinha — JavaScript",
+          description:
+            "Jogo clássico desenvolvido com JavaScript para treino de lógica e DOM.",
+          img: "img/projetos/JogoCobrinha.png",
+          link: "https://github.com/Kakabell/JogoDaCobrinha",
+          date: "Novembro 2024",
+        },
+        {
+          title: "Jogo do Mario — JavaScript",
+          description:
+            "Versão simplificada do jogo criada para praticar lógica e manipulação do DOM.",
+          img: "img/projetos/JogoDoMario.png",
+          link: "https://github.com/Kakabell/JogoMario",
+          date: "Novembro 2024",
+        },
+        {
+          title: "Previsão do Tempo — JS + API",
+          description:
+            "App que consulta uma API de clima e mostra a previsão para a cidade informada.",
+          img: "img/projetos/previsaodotempo.png",
+          link: "https://github.com/Kakabell/Previs-oDoTempo",
+          date: "Novembro 2024",
+        },
+        {
+          title: "Lista de Tarefas — JS",
+          description:
+            "App simples para adicionar items a uma lista de tarefas.",
+          img: "img/projetos/listadeTarefas.png",
+          link: "https://github.com/gusta-lopexx/ListaComJS",
+          date: "Novembro 2024",
+        },
+
+        // ⭐ 2023
+        {
+          title: "Calculadora no Console — C#",
+          description:
+            "Calculadora simples que realiza operações matemáticas básicas diretamente no console.",
+          img: "img/projetos/calculadora.jpg",
+          link: "https://github.com/Kakabell/Calculadora-C--Console",
+          date: "Abril 2023",
+        },
+        {
+          title: "Gerador de Tabuada — C#",
+          description:
+            "Gera tabuadas de multiplicação a partir de um número informado.",
+          img: "img/projetos/tabuada.jpg",
+          link: "https://github.com/Kakabell/GeradorTabuada",
+          date: "Abril 2023",
+        },
+        {
+          title: "Login com HTML & CSS",
+          description:
+            "Interface de login criada com HTML e CSS para fins de treino em front-end.",
+          img: "img/projetos/Tela-Login.jpg",
+          link: "https://github.com/Kakabell/TreinoTelaLogin",
+          date: "Abril 2023",
+        },
+      ];
+
+      const container = document.getElementById("cards-container");
+
+      projetos.forEach((project) => {
+        const col = document.createElement("div");
+        col.className = "col-sm-6 col-lg-4";
+
+        col.innerHTML = `
+        <a href="${project.link}" target="_blank" class="text-decoration-none text-dark">
+          <div class="card h-100 border-danger shadow-sm">
+            <img src="${project.img}" class="card-img-top" alt="${project.title}">
+            <div class="card-body">
+              <h5 class="card-title">${project.title}</h5>
+              <p class="card-text">${project.description}</p>
+            </div>
+            <div class="card-footer text-muted"><small>${project.date}</small></div>
+          </div>
+        </a>
+      `;
+
+        container.appendChild(col);
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
