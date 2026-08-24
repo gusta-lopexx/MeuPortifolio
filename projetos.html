@@ -3,206 +3,1190 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projetos — Gustavo Lopes</title>
+
+    <title>Projetos | Gustavo Lopes</title>
+
+    <meta
+      name="description"
+      content="Conheça os projetos profissionais, pessoais e de estudo desenvolvidos por Gustavo Lopes."
+    />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
     <style>
       body {
         font-family: "Inter", sans-serif;
       }
-      .card-title {
-        font-size: 1.1rem;
-        font-weight: 600;
+
+      .project-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
-      .card-text {
-        font-size: 0.95rem;
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .project-image {
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .category-button {
+        border-radius: 50px;
+        padding: 8px 18px;
+        transition: all 0.2s ease;
+      }
+
+      .category-button.active {
+        background-color: #212529;
+        color: #fff;
+        border-color: #212529;
+      }
+
+      .project-type {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .tech-badge {
+        font-size: 0.78rem;
+        font-weight: 500;
+      }
+
+      .project-item.hidden {
+        display: none;
       }
     </style>
   </head>
+
   <body>
-    <header class="d-flex justify-content-between align-items-center mb-5 p-3">
-      <div class="d-flex align-items-center">
-        <strong>Gustavo Ap. de Souza Lopes</strong>
-        <span class="ms-2 text-muted">Analista e Programador</span>
+
+    <!-- ==================== HEADER ==================== -->
+
+    <header
+      class="container d-flex justify-content-between align-items-center py-4"
+    >
+      <div>
+        <a
+          href="index.html"
+          class="text-decoration-none text-dark"
+        >
+          <strong style="font-size: 1.25rem;">
+            Gustavo Lopes
+          </strong>
+        </a>
+
+        <div class="text-muted small">
+          Analista de Sistemas • TI • Desenvolvimento
+        </div>
       </div>
+
       <nav>
-        <a href="index.html" class="nav-link d-inline">Início</a>
-        <a href="sobre.html" class="nav-link d-inline">Sobre</a>
-        <a href="projetos.html" class="nav-link d-inline">Projetos</a>
-        <a href="contato.html" class="nav-link d-inline">Contato</a>
+        <a
+          href="index.html"
+          class="nav-link d-inline px-2"
+        >
+          Início
+        </a>
+
+        <a
+          href="sobre.html"
+          class="nav-link d-inline px-2"
+        >
+          Sobre
+        </a>
+
+        <a
+          href="projetos.html"
+          class="nav-link d-inline px-2 fw-semibold"
+        >
+          Projetos
+        </a>
+
+        <a
+          href="contato.html"
+          class="nav-link d-inline px-2"
+        >
+          Contato
+        </a>
       </nav>
     </header>
 
-    <main class="container my-5">
-      <section id="projetos">
-        <div class="text-center mb-4">
-          <h1 class="mb-3">Meus Projetos</h1>
-          <p>
-            Alguns projetos que desenvolvi para praticar e aprimorar minhas
-            habilidades em programação.
+
+    <!-- ==================== CONTEÚDO ==================== -->
+
+    <main>
+
+      <!-- ==================== INTRODUÇÃO ==================== -->
+
+      <section class="container py-5">
+
+        <div class="text-center">
+
+          <p class="text-muted fw-semibold mb-2">
+            PORTFÓLIO
           </p>
+
+          <h1 class="display-5 fw-bold mb-3">
+            Meus Projetos
+          </h1>
+
+          <p
+            class="text-muted mx-auto"
+            style="
+              max-width: 720px;
+              font-size: 1.08rem;
+              line-height: 1.8;
+            "
+          >
+            Uma seleção de projetos pessoais, profissionais e de estudo que
+            desenvolvi ao longo da minha trajetória na área de Tecnologia da
+            Informação.
+          </p>
+
         </div>
 
-        <div id="cards-container" class="row g-4">
-          <!-- JS vai preencher os cards aqui -->
-        </div>
       </section>
+
+
+      <!-- ==================== PROJETOS EM DESTAQUE ==================== -->
+
+      <section class="container pb-5">
+
+        <div class="text-center mb-5">
+
+          <p class="text-muted fw-semibold mb-1">
+            DESTAQUES
+          </p>
+
+          <h2 class="fw-bold">
+            Projetos em destaque
+          </h2>
+
+          <p class="text-muted">
+            Projetos que representam melhor meu momento atual de desenvolvimento.
+          </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+          <!-- ==================== PAYDAYTRACK ==================== -->
+
+          <div class="col-lg-4">
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/orcamentosimples.png"
+                class="card-img-top project-image"
+                alt="Projeto PaydayTrack"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Projeto pessoal
+                </span>
+
+                <h3 class="h4 fw-bold mb-3">
+                  PaydayTrack
+                </h3>
+
+                <p class="text-muted">
+                  Projeto pessoal desenvolvido como hobby e para aprimorar
+                  conhecimentos em desenvolvimento web, organização de
+                  informações financeiras, banco de dados e construção de
+                  sistemas.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+
+                  <span class="badge bg-dark tech-badge">
+                    Laravel
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    PHP
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    Filament
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    SQL
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/gusta-lopexx/OrcamentoMensalSimples"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-2"></i>
+                  Ver no GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ==================== MAESTRI ADVOCACIA ==================== -->
+
+          <div class="col-lg-4">
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <div
+                class="d-flex align-items-center justify-content-center bg-light project-image"
+              >
+                <i
+                  class="fa-solid fa-scale-balanced fa-4x text-dark"
+                ></i>
+              </div>
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Projeto profissional
+                </span>
+
+                <h3 class="h4 fw-bold mb-3">
+                  Site Institucional — Maestri Advocacia
+                </h3>
+
+                <p class="text-muted">
+                  Site institucional desenvolvido para apresentação do
+                  escritório Maestri Advocacia, com foco na identidade visual,
+                  apresentação dos serviços e experiência do usuário.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+
+                  <span class="badge bg-dark tech-badge">
+                    React
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    Vite
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    JavaScript
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://www.maestriadvocacia.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-dark"
+                >
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square me-2"
+                  ></i>
+                  Ver site
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ==================== MEU PORTFÓLIO ==================== -->
+
+          <div class="col-lg-4">
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <div
+                class="d-flex align-items-center justify-content-center bg-light project-image"
+              >
+                <i
+                  class="fa-solid fa-laptop-code fa-4x text-dark"
+                ></i>
+              </div>
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Projeto pessoal
+                </span>
+
+                <h3 class="h4 fw-bold mb-3">
+                  Meu Portfólio
+                </h3>
+
+                <p class="text-muted">
+                  Projeto desenvolvido para apresentar minha trajetória
+                  profissional, conhecimentos técnicos e projetos na área de
+                  Tecnologia da Informação.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+
+                  <span class="badge bg-dark tech-badge">
+                    HTML
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    CSS
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    Bootstrap
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/gusta-lopexx/MeuPortifolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-2"></i>
+                  Ver no GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================== FILTROS ==================== -->
+
+      <section class="container py-4">
+
+        <div class="text-center mb-4">
+
+          <p class="text-muted fw-semibold mb-1">
+            EXPLORAÇÃO
+          </p>
+
+          <h2 class="fw-bold">
+            Todos os projetos
+          </h2>
+
+        </div>
+
+
+        <div
+          class="d-flex justify-content-center flex-wrap gap-2"
+          id="filters"
+        >
+
+          <button
+            type="button"
+            class="btn btn-outline-dark category-button active"
+            data-filter="todos"
+          >
+            Todos
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-dark category-button"
+            data-filter="estudo"
+          >
+            Estudos
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-dark category-button"
+            data-filter="javascript"
+          >
+            JavaScript
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-dark category-button"
+            data-filter="csharp"
+          >
+            C#
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================== PROJETOS DE ESTUDO ==================== -->
+
+      <section class="container py-5">
+
+        <div class="row g-4" id="projects-container">
+
+
+          <!-- HOTLAP -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo javascript"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/siteHotLap.png"
+                class="card-img-top project-image"
+                alt="Sistema de HotLap"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Sistema de HotLap
+                </h3>
+
+                <p class="text-muted">
+                  Projeto web para cadastro e visualização de tempos de pilotos
+                  em corridas de HotLap, com ranking, filtros, validações e
+                  atualização automática.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    JavaScript
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    HTML
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    CSS
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/gusta-lopexx/SiteHotLap"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- JOGO DA COBRINHA -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo javascript"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/JogoCobrinha.png"
+                class="card-img-top project-image"
+                alt="Jogo da Cobrinha"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Jogo da Cobrinha
+                </h3>
+
+                <p class="text-muted">
+                  Jogo clássico desenvolvido com JavaScript para praticar
+                  lógica de programação e manipulação do DOM.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    JavaScript
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    HTML
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    CSS
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/Kakabell/JogoDaCobrinha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- JOGO DO MARIO -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo javascript"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/JogoDoMario.png"
+                class="card-img-top project-image"
+                alt="Jogo do Mario"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Jogo do Mario
+                </h3>
+
+                <p class="text-muted">
+                  Versão simplificada desenvolvida para praticar lógica de
+                  programação e manipulação do DOM com JavaScript.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    JavaScript
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    HTML
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    CSS
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/Kakabell/JogoMario"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- PREVISÃO DO TEMPO -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo javascript"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/previsaodotempo.png"
+                class="card-img-top project-image"
+                alt="Previsão do Tempo"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Previsão do Tempo
+                </h3>
+
+                <p class="text-muted">
+                  Aplicação que consulta uma API de clima e apresenta a
+                  previsão para a cidade informada pelo usuário.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    JavaScript
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    API
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/Kakabell/Previs-oDoTempo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- LISTA DE TAREFAS -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo javascript"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/listadeTarefas.png"
+                class="card-img-top project-image"
+                alt="Lista de Tarefas"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Lista de Tarefas
+                </h3>
+
+                <p class="text-muted">
+                  Aplicação simples para adicionar e organizar itens em uma
+                  lista de tarefas.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    JavaScript
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    HTML
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    CSS
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/gusta-lopexx/ListaComJS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CALCULADORA C# -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo csharp"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/calculadora.jpg"
+                class="card-img-top project-image"
+                alt="Calculadora em C#"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Calculadora no Console
+                </h3>
+
+                <p class="text-muted">
+                  Calculadora desenvolvida em C# para realizar operações
+                  matemáticas básicas diretamente pelo console.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    C#
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    .NET
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/Kakabell/Calculadora-C--Console"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- GERADOR DE TABUADA -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo csharp"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/tabuada.jpg"
+                class="card-img-top project-image"
+                alt="Gerador de Tabuada"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Gerador de Tabuada
+                </h3>
+
+                <p class="text-muted">
+                  Aplicação desenvolvida em C# que gera tabuadas de
+                  multiplicação a partir de um número informado.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    C#
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    .NET
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/Kakabell/GeradorTabuada"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- INTERFACE DE LOGIN -->
+
+          <div
+            class="col-sm-6 col-lg-4 project-item"
+            data-category="estudo"
+          >
+
+            <div
+              class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+            >
+
+              <img
+                src="img/projetos/Tela-Login.jpg"
+                class="card-img-top project-image"
+                alt="Interface de Login"
+              />
+
+              <div class="card-body p-4">
+
+                <span
+                  class="badge bg-light text-dark border project-type mb-3"
+                >
+                  Estudo
+                </span>
+
+                <h3 class="h5 fw-bold">
+                  Interface de Login
+                </h3>
+
+                <p class="text-muted">
+                  Interface de login desenvolvida com HTML e CSS para praticar
+                  conceitos de estruturação e estilização de páginas web.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                  <span class="badge bg-dark tech-badge">
+                    HTML
+                  </span>
+
+                  <span class="badge bg-secondary tech-badge">
+                    CSS
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+
+                <a
+                  href="https://github.com/Kakabell/TreinoTelaLogin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-dark"
+                >
+                  <i class="fa-brands fa-github me-1"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================== MENSAGEM FINAL ==================== -->
+
+      <section class="container py-5">
+
+        <div
+          class="border rounded-4 p-5 text-center shadow-sm"
+        >
+
+          <p class="text-muted fw-semibold mb-2">
+            CONTINUO CONSTRUINDO
+          </p>
+
+          <h2 class="fw-bold mb-3">
+            Novos projetos estão por vir
+          </h2>
+
+          <p
+            class="text-muted mx-auto mb-4"
+            style="
+              max-width: 700px;
+              line-height: 1.8;
+            "
+          >
+            Este portfólio está em constante evolução. Conforme desenvolvo
+            novos projetos e aprimoro meus conhecimentos, novos trabalhos serão
+            adicionados aqui.
+          </p>
+
+          <a
+            href="contato.html"
+            class="btn btn-dark btn-lg px-4"
+          >
+            Entre em contato
+          </a>
+
+        </div>
+
+      </section>
+
     </main>
 
-    <footer
-      class="footer d-flex justify-content-center gap-5 text-center py-4 flex-wrap"
-    >
-      <hr
-        style="
-          border: none;
-          height: 3px;
-          background: linear-gradient(
-            to right,
-            transparent,
-            #6c757d,
-            transparent
-          );
-          margin: 40px 0;
-        "
-      />
-      <div>
-        <strong>Email</strong><br />
-        gltechlopes@gmail.com
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="border-top mt-5">
+
+      <div
+        class="container py-4 d-flex justify-content-between align-items-center flex-wrap gap-3"
+      >
+
+        <div>
+
+          <strong>
+            Gustavo Lopes
+          </strong>
+
+          <div class="text-muted small">
+            Analista de Sistemas • TI • Desenvolvimento
+          </div>
+
+        </div>
+
+
+        <div class="d-flex gap-4">
+
+          <a
+            href="mailto:gltechlopes@gmail.com"
+            class="text-decoration-none text-dark"
+          >
+            E-mail
+          </a>
+
+          <a
+            href="https://github.com/gusta-lopexx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none text-dark"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="contato.html"
+            class="text-decoration-none text-dark"
+          >
+            Contato
+          </a>
+
+        </div>
+
       </div>
-      <div>
-        <strong>GitHub</strong><br />
-        <a href="https://github.com/gusta-lopexx" target="_blank"
-          >github.com/gusta-lopexx</a
-        >
+
+
+      <div class="text-center text-muted small pb-3">
+        © 2026 Gustavo Lopes. Todos os direitos reservados.
       </div>
-      <hr
-        style="
-          border: none;
-          height: 3px;
-          background: linear-gradient(
-            to right,
-            transparent,
-            #6c757d,
-            transparent
-          );
-          margin: 40px 0;
-        "
-      />
+
     </footer>
 
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
     <script>
-      const projetos = [
-        // ⭐ 2025
-        {
-          title: "Orçamento mensal — Fillament",
-          description:
-            "Sistema para controle de orçamento mensal, desenvolvido com Fillament para aprimorar habilidades na ferramenta.",
-          img: "img/projetos/orcamentosimples.png",
-          link: "https://github.com/gusta-lopexx/OrcamentoMensalSimples",
-          date: "Julho 2025",
-        },
-        {
-          title: "Sistemas de HotLap",
-          description:
-            "Projeto web simples para cadastro e visualização de tempos de pilotos em corridas de HotLap, com ranking, filtros, validações e atualização automática.",
-          img: "img/projetos/siteHotLap.png",
-          link: "https://github.com/gusta-lopexx/SiteHotLap",
-          date: "Maio 2025",
-        },
+      const filterButtons =
+        document.querySelectorAll(".category-button");
 
-        // ⭐ 2024
-        {
-          title: "Jogo da Cobrinha — JavaScript",
-          description:
-            "Jogo clássico desenvolvido com JavaScript para treino de lógica e DOM.",
-          img: "img/projetos/JogoCobrinha.png",
-          link: "https://github.com/Kakabell/JogoDaCobrinha",
-          date: "Novembro 2024",
-        },
-        {
-          title: "Jogo do Mario — JavaScript",
-          description:
-            "Versão simplificada do jogo criada para praticar lógica e manipulação do DOM.",
-          img: "img/projetos/JogoDoMario.png",
-          link: "https://github.com/Kakabell/JogoMario",
-          date: "Novembro 2024",
-        },
-        {
-          title: "Previsão do Tempo — JS + API",
-          description:
-            "App que consulta uma API de clima e mostra a previsão para a cidade informada.",
-          img: "img/projetos/previsaodotempo.png",
-          link: "https://github.com/Kakabell/Previs-oDoTempo",
-          date: "Novembro 2024",
-        },
-        {
-          title: "Lista de Tarefas — JS",
-          description:
-            "App simples para adicionar items a uma lista de tarefas.",
-          img: "img/projetos/listadeTarefas.png",
-          link: "https://github.com/gusta-lopexx/ListaComJS",
-          date: "Novembro 2024",
-        },
+      const projectItems =
+        document.querySelectorAll(".project-item");
 
-        // ⭐ 2023
-        {
-          title: "Calculadora no Console — C#",
-          description:
-            "Calculadora simples que realiza operações matemáticas básicas diretamente no console.",
-          img: "img/projetos/calculadora.jpg",
-          link: "https://github.com/Kakabell/Calculadora-C--Console",
-          date: "Abril 2023",
-        },
-        {
-          title: "Gerador de Tabuada — C#",
-          description:
-            "Gera tabuadas de multiplicação a partir de um número informado.",
-          img: "img/projetos/tabuada.jpg",
-          link: "https://github.com/Kakabell/GeradorTabuada",
-          date: "Abril 2023",
-        },
-        {
-          title: "Login com HTML & CSS",
-          description:
-            "Interface de login criada com HTML e CSS para fins de treino em front-end.",
-          img: "img/projetos/Tela-Login.jpg",
-          link: "https://github.com/Kakabell/TreinoTelaLogin",
-          date: "Abril 2023",
-        },
-      ];
+      filterButtons.forEach((button) => {
 
-      const container = document.getElementById("cards-container");
+        button.addEventListener("click", () => {
 
-      projetos.forEach((project) => {
-        const col = document.createElement("div");
-        col.className = "col-sm-6 col-lg-4";
+          const filter =
+            button.getAttribute("data-filter");
 
-        col.innerHTML = `
-        <a href="${project.link}" target="_blank" class="text-decoration-none text-dark">
-          <div class="card h-100 border-danger shadow-sm">
-            <img src="${project.img}" class="card-img-top" alt="${project.title}">
-            <div class="card-body">
-              <h5 class="card-title">${project.title}</h5>
-              <p class="card-text">${project.description}</p>
-            </div>
-            <div class="card-footer text-muted"><small>${project.date}</small></div>
-          </div>
-        </a>
-      `;
+          filterButtons.forEach((item) => {
+            item.classList.remove("active");
+          });
 
-        container.appendChild(col);
+          button.classList.add("active");
+
+          projectItems.forEach((project) => {
+
+            const categories =
+              project.getAttribute("data-category");
+
+            if (
+              filter === "todos" ||
+              categories.includes(filter)
+            ) {
+
+              project.classList.remove("hidden");
+
+            } else {
+
+              project.classList.add("hidden");
+
+            }
+
+          });
+
+        });
+
       });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
   </body>
 </html>
-
-

@@ -1,107 +1,607 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gustavo Lopes - Analista e Programador</title>
+    <title>Gustavo Lopes | Analista de Sistemas</title>
+
+    <meta
+      name="description"
+      content="Portfólio profissional de Gustavo Lopes, Analista de Sistemas com experiência em suporte de TI, sistemas, banco de dados e desenvolvimento."
+    />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header class="d-flex justify-content-between align-items-center mb-5">
-      <div class="d-flex align-items-center">
-        <strong>Gustavo Ap. de Souza Lopes</strong>
-        <span class="ms-2 text-muted"> Analista e Programador</span>
+
+    <!-- ==================== HEADER ==================== -->
+
+    <header
+      class="container d-flex justify-content-between align-items-center py-4"
+    >
+      <div>
+        <a
+          href="index.html"
+          class="text-decoration-none text-dark"
+        >
+          <strong style="font-size: 1.25rem;">
+            Gustavo Lopes
+          </strong>
+        </a>
+
+        <div class="text-muted small">
+          Analista de Sistemas • TI • Desenvolvimento
+        </div>
       </div>
 
       <nav>
-        <a href="index.html" class="nav-link d-inline">Inicio</a>
-        <a href="sobre.html" class="nav-link d-inline">Sobre</a>
-        <a href="projetos.html" class="nav-link d-inline">Projetos</a>
-        <a href="contato.html" class="nav-link d-inline">Contato</a>
+        <a
+          href="index.html"
+          class="nav-link d-inline px-2 fw-semibold"
+        >
+          Início
+        </a>
+
+        <a
+          href="sobre.html"
+          class="nav-link d-inline px-2"
+        >
+          Sobre
+        </a>
+
+        <a
+          href="projetos.html"
+          class="nav-link d-inline px-2"
+        >
+          Projetos
+        </a>
+
+        <a
+          href="contato.html"
+          class="nav-link d-inline px-2"
+        >
+          Contato
+        </a>
       </nav>
     </header>
 
-    <main class="container my-5">
-      <div class="row align-items-center">
-        <!-- Texto à esquerda -->
-        <div class="col-md-6 text-start">
-          <h2 class="mb-4 fw-bold">Prazer, eu sou o Gustavo!</h2>
 
-          <p class="fs-5">
-            Sou Consultor de Sistemas, formado em Informática pelo SENAI-SC e em
-            Sistemas de Informação pela
-            <strong>UNIFEBE</strong>. Trabalho com análise e suporte a sistemas,
-            sempre buscando ampliar meus conhecimentos em desenvolvimento e
-            banco de dados.
-          </p>
+    <!-- ==================== APRESENTAÇÃO ==================== -->
 
-          <p class="fs-5">
-            Tenho boa capacidade de adaptação e interesse contínuo em entender
-            como as soluções são construídas. Gosto de desafios técnicos e de
-            aprender novas ferramentas que possam melhorar processos.
-          </p>
+    <main>
 
-          <p class="fs-5">
-            Neste portfólio, apresento um pouco da minha trajetória e alguns
-            projetos que venho desenvolvendo enquanto avanço na área de
-            tecnologia.
-            <br /><br />
-            <span class="fw-semibold">Sinta-se à vontade para explorar.</span>
-          </p>
+      <section class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+          <!-- TEXTO -->
+
+          <div class="col-lg-7">
+
+            <h1
+              class="fw-bold mb-3"
+              style="font-size: 3.2rem;"
+            >
+              Gustavo Lopes
+            </h1>
+
+            <h2
+              class="fw-semibold text-muted mb-4"
+              style="font-size: 1.6rem;"
+            >
+              Analista de Sistemas
+              <span class="mx-2">•</span>
+              Suporte de TI
+              <span class="mx-2">•</span>
+              Desenvolvimento
+            </h2>
+
+            <p
+              class="text-muted mb-3"
+              style="
+                font-size: 1.15rem;
+                line-height: 1.8;
+              "
+            >
+              Profissional de Tecnologia da Informação com experiência em
+              análise e suporte a sistemas, atendimento a usuários,
+              investigação de problemas e banco de dados.
+            </p>
+
+            <p
+              class="text-muted mb-4"
+              style="
+                font-size: 1.05rem;
+                line-height: 1.8;
+              "
+            >
+              Sou formado em Informática pelo SENAI-SC e em Sistemas de
+              Informação pela UNIFEBE. Tenho interesse em tecnologia e busco
+              constantemente desenvolver novas habilidades, especialmente em
+              desenvolvimento de sistemas e soluções web.
+            </p>
+
+            <div class="d-flex gap-3 flex-wrap">
+
+              <a
+                href="projetos.html"
+                class="btn btn-dark btn-lg px-4"
+              >
+                Ver meus projetos
+              </a>
+
+              <a
+                href="contato.html"
+                class="btn btn-outline-dark btn-lg px-4"
+              >
+                Entre em contato
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- FOTO -->
+
+          <div class="col-lg-5 text-center">
+
+            <img
+              src="img/about.jpg"
+              alt="Foto de Gustavo Lopes"
+              class="img-fluid rounded-4 shadow-lg"
+              style="
+                width: 380px;
+                height: 430px;
+                object-fit: cover;
+              "
+            />
+
+          </div>
+
         </div>
 
-        <!-- Imagem à direita -->
-        <div class="col-md-6 text-center">
-          <img
-            src="img/about.jpg"
-            alt="Foto de Gustavo"
-            class="img-fluid rounded shadow-lg"
-            style="max-height: 450px; object-fit: cover"
-          />
+      </section>
+
+
+      <!-- ==================== CONHECIMENTOS ==================== -->
+
+      <section class="container py-5">
+
+        <div class="text-center mb-4">
+
+          <p class="text-muted fw-semibold mb-1">
+            CONHECIMENTOS
+          </p>
+
+          <h2 class="fw-bold">
+            Tecnologias e ferramentas
+          </h2>
+
         </div>
 
-        <hr
-          style="
-            border: none;
-            height: 3px;
-            background: linear-gradient(
-              to right,
-              transparent,
-              #6c757d,
-              transparent
-            );
-            margin: 40px 0;
-          "
-        />
-      </div>
+
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+
+          <span class="badge bg-light text-dark border p-3">
+            HTML
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            CSS
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            JavaScript
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            PHP
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            Laravel
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            SQL
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            Delphi
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            Git
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            GitHub
+          </span>
+
+          <span class="badge bg-light text-dark border p-3">
+            Tasy
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================== EXPERIÊNCIA ==================== -->
+
+      <section class="container py-5">
+
+        <div class="row align-items-center g-4">
+
+          <div class="col-lg-8">
+
+            <p class="text-muted fw-semibold mb-1">
+              EXPERIÊNCIA
+            </p>
+
+            <h2 class="fw-bold mb-3">
+              Experiência em tecnologia e sistemas
+            </h2>
+
+            <p
+              class="text-muted"
+              style="line-height: 1.8;"
+            >
+              Minha experiência profissional está voltada para análise e
+              suporte de sistemas, atendimento a usuários, identificação e
+              resolução de problemas, banco de dados e acompanhamento de
+              processos de tecnologia.
+            </p>
+
+            <p
+              class="text-muted"
+              style="line-height: 1.8;"
+            >
+              Tenho experiência com sistemas de saúde, especialmente com o
+              Tasy em ambientes HTML5 e Delphi, além de contato com diferentes
+              sistemas e ferramentas utilizados em ambientes corporativos.
+            </p>
+
+            <p
+              class="text-muted"
+              style="line-height: 1.8;"
+            >
+              Também venho desenvolvendo projetos próprios para colocar em
+              prática meus conhecimentos em programação, desenvolvimento web e
+              banco de dados.
+            </p>
+
+            <a
+              href="sobre.html"
+              class="btn btn-outline-dark"
+            >
+              Conheça minha trajetória →
+            </a>
+
+          </div>
+
+
+          <div class="col-lg-4">
+
+            <div class="border rounded-4 p-4 shadow-sm">
+
+              <h3 class="h5 fw-bold mb-3">
+                Áreas de atuação
+              </h3>
+
+              <ul class="list-unstyled text-muted mb-0">
+
+                <li class="mb-2">
+                  ✓ Análise de Sistemas
+                </li>
+
+                <li class="mb-2">
+                  ✓ Suporte de TI
+                </li>
+
+                <li class="mb-2">
+                  ✓ Sistemas de Saúde
+                </li>
+
+                <li class="mb-2">
+                  ✓ Banco de Dados / SQL
+                </li>
+
+                <li class="mb-2">
+                  ✓ Desenvolvimento Web
+                </li>
+
+                <li>
+                  ✓ Resolução de Problemas
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================== PROJETOS ==================== -->
+
+      <section class="container py-5">
+
+        <div class="text-center mb-5">
+
+          <p class="text-muted fw-semibold mb-1">
+            PORTFÓLIO
+          </p>
+
+          <h2 class="fw-bold">
+            Projetos em destaque
+          </h2>
+
+          <p class="text-muted">
+            Alguns projetos que desenvolvi para colocar meus conhecimentos em
+            prática.
+          </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+          <!-- ==================== PAYDAYTRACK ==================== -->
+
+          <div class="col-md-4">
+
+            <div
+              class="border rounded-4 p-4 h-100 shadow-sm"
+            >
+
+              <h3 class="h5 fw-bold">
+                PaydayTrack
+              </h3>
+
+              <p class="text-muted">
+                Projeto pessoal desenvolvido como hobby e para aprimoramento
+                dos meus conhecimentos em desenvolvimento web, utilizando
+                Laravel, PHP e banco de dados.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-dark">
+                  Laravel
+                </span>
+
+                <span class="badge bg-secondary">
+                  PHP
+                </span>
+
+                <span class="badge bg-secondary">
+                  SQL
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ==================== MAESTRI ADVOCACIA ==================== -->
+
+          <div class="col-md-4">
+
+            <div
+              class="border rounded-4 p-4 h-100 shadow-sm"
+            >
+
+              <h3 class="h5 fw-bold">
+                Site Institucional — Maestri Advocacia
+              </h3>
+
+              <p class="text-muted">
+                Site institucional desenvolvido para apresentação do escritório
+                Maestri Advocacia, com foco em identidade visual, apresentação
+                dos serviços e experiência do usuário.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-dark">
+                  React
+                </span>
+
+                <span class="badge bg-secondary">
+                  Vite
+                </span>
+
+                <span class="badge bg-secondary">
+                  JavaScript
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ==================== PORTFÓLIO ==================== -->
+
+          <div class="col-md-4">
+
+            <div
+              class="border rounded-4 p-4 h-100 shadow-sm"
+            >
+
+              <h3 class="h5 fw-bold">
+                Meu Portfólio
+              </h3>
+
+              <p class="text-muted">
+                Projeto desenvolvido para apresentar minha trajetória
+                profissional, conhecimentos técnicos e projetos na área de
+                Tecnologia da Informação.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-dark">
+                  HTML
+                </span>
+
+                <span class="badge bg-secondary">
+                  CSS
+                </span>
+
+                <span class="badge bg-secondary">
+                  Bootstrap
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="text-center mt-4">
+
+          <a
+            href="projetos.html"
+            class="btn btn-outline-dark"
+          >
+            Ver todos os projetos →
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================== OBJETIVO ==================== -->
+
+      <section class="container py-5">
+
+        <div
+          class="border rounded-4 p-5 text-center shadow-sm"
+        >
+
+          <p class="text-muted fw-semibold mb-2">
+            OBJETIVO PROFISSIONAL
+          </p>
+
+          <h2 class="fw-bold mb-3">
+            Buscando novos desafios em TI
+          </h2>
+
+          <p
+            class="text-muted mx-auto mb-4"
+            style="
+              max-width: 750px;
+              line-height: 1.8;
+            "
+          >
+            Estou aberto a novas oportunidades nas áreas de
+            <strong>Análise de Sistemas, Suporte de TI e Desenvolvimento</strong>.
+            Busco um ambiente onde possa contribuir com minha experiência em
+            sistemas e suporte, participar da resolução de problemas e
+            continuar desenvolvendo minhas habilidades técnicas.
+          </p>
+
+          <a
+            href="contato.html"
+            class="btn btn-dark btn-lg px-4"
+          >
+            Entre em contato
+          </a>
+
+        </div>
+
+      </section>
+
     </main>
 
-    <footer
-      class="footer d-flex justify-content-center gap-5 text-center py-4 flex-wrap"
-    >
-      <div>
-        <strong>Email</strong><br />
-        gltechlopes@gmail.com
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="border-top mt-5">
+
+      <div
+        class="container py-4 d-flex justify-content-between align-items-center flex-wrap gap-3"
+      >
+
+        <div>
+
+          <strong>
+            Gustavo Lopes
+          </strong>
+
+          <div class="text-muted small">
+            Analista de Sistemas • TI • Desenvolvimento
+          </div>
+
+        </div>
+
+
+        <div class="d-flex gap-4">
+
+          <a
+            href="mailto:gltechlopes@gmail.com"
+            class="text-decoration-none text-dark"
+          >
+            E-mail
+          </a>
+
+          <a
+            href="https://github.com/gusta-lopexx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none text-dark"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="contato.html"
+            class="text-decoration-none text-dark"
+          >
+            Contato
+          </a>
+
+        </div>
+
       </div>
 
-      <div>
-        <strong>GitHub</strong><br />
-        <a href="https://github.com/gusta-lopexx" target="_blank"
-          >https://github.com/gusta-lopexx</a
-        >
+
+      <div class="text-center text-muted small pb-3">
+        © 2026 Gustavo Lopes. Todos os direitos reservados.
       </div>
+
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
   </body>
 </html>
